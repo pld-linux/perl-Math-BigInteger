@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	BigInteger
+%define		pdir	Math
+%define		pnam	BigInteger
 Summary:	Math::BigInteger perl module
 Summary(pl):	Modu³ perla Math::BigInteger
 Name:		perl-Math-BigInteger
