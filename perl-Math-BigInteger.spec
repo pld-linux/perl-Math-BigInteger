@@ -5,12 +5,12 @@ Summary:	Math::BigInteger perl module
 Summary(pl):	Modu³ perla Math::BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.0
-Release:	7
+Release:	8
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,7 +24,8 @@ Younga.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -38,8 +39,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/Math/BigInteger.pm
-%dir %{perl_sitearch}/auto/Math/BigInteger
-%{perl_sitearch}/auto/Math/BigInteger/BigInteger.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Math/BigInteger/BigInteger.so
+%{perl_vendorarch}/Math/BigInteger.pm
+%dir %{perl_vendorarch}/auto/Math/BigInteger
+%{perl_vendorarch}/auto/Math/BigInteger/BigInteger.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Math/BigInteger/BigInteger.so
 %{_mandir}/man3/*
