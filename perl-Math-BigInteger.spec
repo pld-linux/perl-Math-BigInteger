@@ -6,7 +6,8 @@ Summary(pl):	Modu³ perla Math::BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.0
 Release:	8
-License:	distributable
+# if used in a product, Systemics should be given attribution
+License:	free use, distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a92ffa6d66491c83ebe416ac86825da6
@@ -39,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc README COPYRIGHT
 %{perl_vendorarch}/Math/BigInteger.pm
 %dir %{perl_vendorarch}/auto/Math/BigInteger
 %{perl_vendorarch}/auto/Math/BigInteger/BigInteger.bs
