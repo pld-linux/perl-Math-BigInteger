@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	BigInteger
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math-BigInteger perl module
 Summary(pl):	Modu³ perla Math-BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.0
-Release:	6
-
+Release:	7
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Modu³ Math-BigInteger umo¿liwia dostêp do biblioteki bignum Erica
 Younga.
 
 %prep
-%setup -q -n Math-BigInteger-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
