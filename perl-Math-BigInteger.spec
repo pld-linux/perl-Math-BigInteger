@@ -3,7 +3,7 @@ Summary:	Math-BigInteger perl module
 Summary(pl):	Modu³ perla Math-BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.0
-Release:	4
+Release:	5
 License:	Distributable
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
