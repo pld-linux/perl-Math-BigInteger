@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math-BigInteger perl module
 Summary(pl):	Modu³ perla Math-BigInteger
 Name:		perl-Math-BigInteger
@@ -7,7 +8,8 @@ Copyright:	distributable
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Math/Math-BigInteger-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -23,13 +25,14 @@ Modu³ Math-BigInteger umo¿liwia dostêp do biblioteki bignum Erica Younga.
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Math/BigInteger/*.so
+strip --strip-unneeded \
+	$RPM_BUILD_ROOT/%{perl_sitearch}/auto/Math/BigInteger/*.so
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Math/BigInteger
