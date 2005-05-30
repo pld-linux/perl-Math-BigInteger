@@ -8,13 +8,13 @@
 Summary:	Math::BigInteger perl module
 Summary(pl):	Modu³ perla Math::BigInteger
 Name:		perl-Math-BigInteger
-Version:	1.0
-Release:	9
+Version:	1.01
+Release:	1
 # if used in a product, Systemics should be given attribution
 License:	free use, distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a92ffa6d66491c83ebe416ac86825da6
+# Source0-md5:	a4aa79e070f3f5f8e7f01443fdc03b8e
 Patch0:		%{name}-Fputc_to_fputc.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
