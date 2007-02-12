@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInteger
 Summary:	Math::BigInteger perl module
-Summary(pl):	Modu≥ perla Math::BigInteger
+Summary(pl.UTF-8):   Modu≈Ç perla Math::BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.01
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Math::BigInteger module gives access to Eric Young's bignum library.
 
-%description -l pl
-Modu≥ Math::BigInteger umoøliwia dostÍp do biblioteki bignum Erica
+%description -l pl.UTF-8
+Modu≈Ç Math::BigInteger umo≈ºliwia dostƒôp do biblioteki bignum Erica
 Younga.
 
 %prep
