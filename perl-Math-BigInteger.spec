@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInteger
 Summary:	Math::BigInteger perl module
-Summary(pl.UTF-8):   Moduł perla Math::BigInteger
+Summary(pl.UTF-8):	Moduł perla Math::BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.01
 Release:	1
