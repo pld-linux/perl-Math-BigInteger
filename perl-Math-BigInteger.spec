@@ -9,7 +9,7 @@ Summary:	Math::BigInteger perl module
 Summary(pl.UTF-8):	Moduł perla Math::BigInteger
 Name:		perl-Math-BigInteger
 Version:	1.01
-Release:	1
+Release:	2
 # if used in a product, Systemics should be given attribution
 License:	free use, distributable
 Group:		Development/Languages/Perl
