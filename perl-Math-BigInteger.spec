@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README COPYRIGHT
 %{perl_vendorarch}/Math/BigInteger.pm
 %dir %{perl_vendorarch}/auto/Math/BigInteger
-%{perl_vendorarch}/auto/Math/BigInteger/BigInteger.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/BigInteger/BigInteger.so
 %{_mandir}/man3/*
