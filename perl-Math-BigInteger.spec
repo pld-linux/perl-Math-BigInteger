@@ -9,7 +9,7 @@ Summary:	Math::BigInteger - arbitrary length integer extension module for Perl
 Summary(pl.UTF-8):	Math::BigInteger - moduł rozszerzenia liczb całkowitych dowolnej długości
 Name:		perl-Math-BigInteger
 Version:	1.01
-Release:	8
+Release:	9
 # if used in a product, Systemics should be given attribution
 License:	free use, distributable
 Group:		Development/Languages/Perl
