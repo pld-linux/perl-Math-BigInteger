@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Math
 %define		pnam	BigInteger
 Summary:	Math::BigInteger - arbitrary length integer extension module for Perl
