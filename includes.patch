@@ -1,0 +1,21 @@
+--- Math-BigInteger-1.01/bn.c.orig	2025-08-01 00:39:52.095599403 +0200
++++ Math-BigInteger-1.01/bn.c	2025-08-01 00:41:51.763630729 +0200
+@@ -46,6 +46,8 @@
+  */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ #include "bn.h"
+ 
+ #ifndef Fputc
+--- Math-BigInteger-1.01/bn_regs.c.orig	1996-05-05 17:30:56.000000000 +0200
++++ Math-BigInteger-1.01/bn_regs.c	2025-08-01 00:41:39.270555340 +0200
+@@ -46,6 +46,7 @@
+  */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include "bn.h"
+ 
+ #define REG_INC	8

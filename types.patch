@@ -1,0 +1,11 @@
+--- Math-BigInteger-1.01/bn.c.orig	2025-08-01 00:44:21.160386458 +0200
++++ Math-BigInteger-1.01/bn.c	2025-08-01 00:44:50.252549404 +0200
+@@ -892,7 +892,7 @@
+ 
+ 	/* Check for divide by zero */
+ 	if (bn_is_zero(d))
+-		return NULL;
++		return 0;
+ 
+ 	if (bn_cmp(m,d) < 0)
+ 		{

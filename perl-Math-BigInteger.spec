@@ -15,6 +15,8 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a4aa79e070f3f5f8e7f01443fdc03b8e
 Patch0:		%{name}-Fputc_to_fputc.patch
+Patch1:		includes.patch
+Patch2:		types.patch
 URL:		http://search.cpan.org/dist/Math-BigInteger/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -31,6 +33,8 @@ Younga. Jest to szybsza alternatywa dla biblioteki Math::BigInt.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -P0 -p0
+%patch -P1 -p1
+%patch -P2 -p1
 
 %build
 %{__perl} Makefile.PL \
